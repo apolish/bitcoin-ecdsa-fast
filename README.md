@@ -1,5 +1,5 @@
 # bitcoin-ecdsa-fast
-Elliptic Curve Digital Signature Algorithm, Secp256k1
+Elliptic Curve Digital Signature Algorithm, Secp256k1.
 P.S (The algorithm can work about 4 times faster than previous algorithm "bitcoin-ecdsa")
 
 ## Description
