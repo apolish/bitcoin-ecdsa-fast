@@ -1,10 +1,9 @@
-
 [1] Generate a new key pair (private and public key) randomly:
 Private key:
-  d = 2d533f7f0e57e59d3322003d31f59c5a8cff8ed92ee57fec4907ebe1b001b5be
+  d = fd7f8e5019cb51c3cee882c84d13acfd451a1c7bb27cc2d438c4ce90fe1d72a8
 Public key:
-  x = def9afca6baa42c5879f2f5cc7ccc6d3f34f44369a564998732ed99694fb915d
-  y = f6750fdd1afe53651d13f5d51c4f7f0e5e8ac51cf5bf9efb8e0c9be4109937ab
+  x = a903c242a66b52eb0f32f6882a229e88bd9d22210b7169212d942d643771ba36
+  y = 8da86071f2d1d891ac2a7e7a49be75d39912a6a70b10848d695a93126e4162ca
 
 [2] Generate only public key if private key is known:
 Private key:
@@ -16,11 +15,11 @@ Public key:
 
 [3] Sign some message and verificate it:
 Signature:
-  r = 3f82139b3446e716a38973132b5cfb02d88dbd1c4a3a4a9588bc09126cb57166
-  s = b3a1aafe6b0d41514d214320d203675b309c034361471ddb312b54d7097c1fac
+  r = 9afe2b683e92ba78033bcf18dcff1c128dc26f9589ab15a2cd777231fa3f0768
+  s = feef8d2e5c76cd58eb0f750d9e1f77be376a27292fea7cc54e2d99c742f93d5d
   z = ea4a2a8b30efca469195f46d4783821f7ec77a8183227481ddae250f4939c4ba
-Verification: False
+Verification: True
 
 [4] Verify some bitcoin transaction (for example):
   txid: cca7507897abc89628f450e8b1e0c6fca4ec3f7b34cccf55f3f531c659ff4d79
-Verification: False
+Verification: True
