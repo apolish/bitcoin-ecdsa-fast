@@ -352,7 +352,7 @@ class Ecdsa(object):
         result = (x3 % self.__curve.p, -y3 % self.__curve.p)
         return result
 
-    def __scalar_multiply(self, k, point):
+    def __scalar_multiply(self, k, point, mode = 0):
         """ Return [k * point] computed using the double and point_add algorithm. """
         if k % self.__curve.n == 0 or point is None:
             return None
@@ -366,9 +366,11 @@ class Ecdsa(object):
             if k & 1:
                 # Add.
                 result = self.__point_add(result, addend)
-            # Double.
-            #addend = self.__point_add(addend, addend) commented by apolish 2019/05/11
-            addend = self.__addend_points[i]
+            # Double. 
+            if mode == 1: # only for 'make_keypair' method. 
+                addend = self.__addend_points[i]
+            else: # for other methods.
+                addend = self.__point_add(addend, addend)     
             k >>= 1
             i += 1
         assert self.__is_on_curve(result)
@@ -378,7 +380,7 @@ class Ecdsa(object):
         """ Generate a random private-public key pair. """
         if private_key == 0:
             private_key = random.randrange(1, self.__curve.n - 1)
-        public_key = self.__scalar_multiply(private_key, self.__curve.g)
+        public_key = self.__scalar_multiply(private_key, self.__curve.g, 1)
         return private_key, public_key
     
     def public_key(self, public_key):
