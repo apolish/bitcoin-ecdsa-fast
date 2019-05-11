@@ -5,12 +5,12 @@ Public key:
   x = 6ccc5b0eec2e4636d80274e74895f8508fe5bde0a4ad438d7e275ce880503493
   y = 692c750209e57d1ca480f568e7cddf5cba7d85531b214e041acee80fb50ee8bc
   Q = 046ccc5b0eec2e4636d80274e74895f8508fe5bde0a4ad438d7e275ce880503493692c750209e57d1ca480f568e7cddf5cba7d85531b214e041acee80fb50ee8bc
-Spent time: 0.030 sec.
+Spent time: 0.035 sec.
 
 SIGN AND VERIFY BITCOIN TRANSACTION:
 Signature:
-  r = e4458264f3d6e3b0d5f000b65268ef6706af034557f6d7b05ed45a3f21996028
-  s = c306b708d6f4e091cdd28af07c33863f3b5f1b00d4dfc593ed291b6e951277cb
+  r = d81478339c7b30e7377cd513a7b76c1d33e9b8d86cdb750423ec8e6d67892bd8
+  s = ebbc59cafa6a44be7c2d072eddb87dfd69be6766d438eb3deeace2a1e76655f1
   z = ea4a2a8b30efca469195f46d4783821f7ec77a8183227481ddae250f4939c4ba
-Verification: False
-Spent time: 0.112 sec.
+Verification: True
+Spent time: 0.328 sec.
